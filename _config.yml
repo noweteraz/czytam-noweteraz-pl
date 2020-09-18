@@ -1,0 +1,89 @@
+title: Wiem, bo czytam
+title-school: Czytam, więc świadomie wybieram
+title-short: Wiem, bo czytam
+description: "Projekt zapobiegania przyczynom przestępczości."
+hero-slogan: Promujemy zalety czytania książek
+hero-description: OGÓLNOPOLSKA KAMPANIA „Wiem, bo czytam”
+
+url: https://czytam.noweteraz.pl
+
+logo: "/assets/images/logos/czytam-wiec-wiem-logo-black.png"
+
+timezone: Europe/Warsaw
+
+google:
+  tag_manager:
+    container_id: 
+     
+social:
+  facebook: wykluczenipl
+ 
+company:
+  name: Fundacja Nowe Teraz
+  address_street: "ul. Zielna 39"
+  address_city: "Warszawa"
+  address_postcode: "00-108"
+  address_region: "Mazowieckie"
+  address_country: "Poland"
+  email: galeria@noweteraz.pl
+  uri: &uri "https://czytam.noweteraz.pl"
+  url: *uri
+  phone: "+48574662644"
+  phone_human: "574-662-644"
+
+  
+exclude:
+- Gruntfile.js
+- Gemfile
+- Gemfile.lock
+- package.json
+- package-lock.json
+- README*
+- node_modules
+- ".gitignore"
+
+include:
+- "_pages"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+excerpt_separator: |2+
+
+sass:
+  sass_dir: _sass/
+  style: compressed
+
+per_page: 12
+date_format: "%d-%m-%Y"
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+    
+plugins:
+- jekyll-sitemap
+- jekyll-seo-tag
+  
+collections:
+  posts:
+    title: Artykuły
+    output: true
+  pages:
+    output: true
+defaults:
+  # Blog
+- scope:
+    path: _posts/blog
+    type: posts
+  values:
+    category: blog
+    permalink: "/:categories/:title/"
+    layout: post
+- scope:
+    path: "assets/**/*.pdf"
+  values:
+    sitemap: false

@@ -1,2 +1,2 @@
 # czytam-noweteraz-pl
-Czytam Więc Wiem
+Wiem, bo czytam

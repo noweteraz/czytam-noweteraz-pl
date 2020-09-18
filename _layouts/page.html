@@ -1,0 +1,25 @@
+---
+
+---
+<!DOCTYPE html>
+<html>
+
+  {%- include head.html -%}
+
+	<body class="body">
+
+    {%- include header.html -%}
+
+    <main class="main" aria-label="Content">
+      
+    {%- include breadcrumb.html -%}
+      
+        {{ content }}
+
+    </main>
+
+    {%- include footer.html -%}
+    {%- include scripts.html -%}
+    {%- include cookie-consent.html -%}
+  </body>
+</html>
