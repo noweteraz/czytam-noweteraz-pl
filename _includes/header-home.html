@@ -1,0 +1,38 @@
+<header id="header" class="header-transparent" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': false, 'stickyStartAt': 0}">
+  <div class="header-body border-top-0 box-shadow-none">
+    <div class="header-container container-fluid">
+      <div class="header-row">
+        <div class="header-column">
+          <div class="header-row">
+            <div class="header-logo">
+              <a href="/">
+                <img alt="Logo" width="80" height="80" src="/assets/images/logos/czytam-wiec-wiem-logo-white.png">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header-column justify-content-end">
+          <div class="header-row">
+            <div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+              <div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-transition header-nav-main-effect-2 header-nav-main-sub-effect-1 px-3">
+                <nav class="collapse">
+                  {% include navigation.html  navigation=site.data.navigation %}
+                </nav>
+              </div>
+              <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2 ml-0">
+              <div class="header-nav-feature header-nav-features-search d-inline-flex">
+                <ul class="header-social-icons social-icons d-none d-sm-block social-icons-icon-light social-icons-clean ml-0">
+                  <li class="social-icons-facebook"><a href="https://www.facebook.com/{{ site.social.facebook }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

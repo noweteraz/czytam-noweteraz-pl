@@ -1,0 +1,39 @@
+<section class="section section-background section-scroll overlay overlay-show overlay-color-primary overlay-op-9 border-0 m-0" data-section-scroll-title="PRZEJDŻ DO SEKCJI 4" data-section-scroll-header-color="light" style="background-image: url(/assets/images/backgrounds/czytam-wiec-wiem-header-baner-full-black.jpg); background-size: cover; background-position: center;">
+  <div class="container h-100 py-5 py-md-0">
+    <div class="row align-items-center h-100">
+      <div class="col">
+        <div class="row">
+          <div class="col text-center">
+            <div class="overflow-hidden mb-5">
+              <h2 class="text-color-light font-weight-bold text-10 pb-2 mt-2 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Dlaczego warto czytać</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+
+            <div class="owl-carousel owl-theme stage-margin stage-margin-lg nav-light nav-style-2 mb-0" data-plugin-options="{'items': 1, 'margin': 100, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 100, 'autoHeight': true}">
+            {% for comment in site.data.testimonials %}
+              <div>
+                <div class="testimonial testimonial-style-2 mb-0">
+                  <div class="testimonial-author">
+                    <img src="{{ comment.img }}" class="img-fluid rounded-circle" alt="{{ comment.author }}">
+                  </div>
+                  <blockquote>
+                    <p class="text-color-light text-5 line-height-7 mb-0">{{ comment.text }}</p>
+                  </blockquote>
+                  <div class="testimonial-author">
+                    <p><strong class="font-weight-extra-bold text-color-light text-2">- {{ comment.author }}</strong></p>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+</section>

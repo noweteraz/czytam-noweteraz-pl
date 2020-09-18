@@ -1,0 +1,30 @@
+{% if page.layout == 'home' %}
+<footer id="footer" class="bg-transparent border-0 position-absolute bottom-0 w-100">
+  <div class="container">
+    <div class="footer-copyright footer-copyright-style-2 bg-transparent pb-4">
+      <div class="py-2">
+        <div class="row py-4">
+          <div class="col d-flex align-items-center justify-content-center mb-0">
+            <p class="text-color-light text-3 opacity-9">© Copyright {{ site.time | date: '%Y' }} by {{ site.company.name }}. All Rights Reserved.  | <a class="text-light" href="/polityka-prywatnosci/"> Polityka prywatności</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% else %}
+<footer id="footer" class="border-0 mt-0">
+  <div class="footer-copyright bg-color-light-scale-1 py-4">
+    <div class="container py-2">
+      <div class="row py-4">
+        <div class="col text-center">
+          <ul class="footer-social-icons social-icons social-icons-clean social-icons-icon-dark mb-3">
+            <li class="social-icons-facebook"><a href="https://www.facebook.com/{{ site.social.facebook }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          </ul>
+          <p><strong>© Copyright {{ site.time | date: '%Y' }} by {{ site.company.name }}. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endif %}

@@ -1,0 +1,26 @@
+---
+
+---
+<!DOCTYPE html>
+<html class="disable-onload-scroll overflow-hidden">
+
+  {%- include head.html -%}
+
+	<body class="loading-overlay-showing" data-loading-overlay data-plugin-section-scroll data-plugin-options="{'targetClass': '.section-scroll', 'dotsClass': 'section-scroll-dots-navigation-colored', 'changeHeaderLogo': true, 'headerLogoDark': '/assets/images/logos/czytam-wiec-wiem-logo-black.png', 'headerLogoLight': '/assets/images/logos/czytam-wiec-wiem-logo-white.png'}">
+  
+    <div class="body bg-dark">
+      
+    {%- include header-home.html -%}
+
+    <div role="main" class="main" aria-label="Content">
+      
+        {{ content }}
+
+    </div>
+    </div>
+   
+    {%- include scripts.html -%}
+    {%- include cookie-consent.html -%}
+ 
+  </body>
+</html>
