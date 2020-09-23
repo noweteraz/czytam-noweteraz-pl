@@ -4,12 +4,9 @@
 - text: O projekcie
   url: /projekt-wiem-bo-czytam/
   order: 2
-- text: Dla szkół
-  url: /projekt-czytam-wiec-swiadomie-wybieram/
-  order: 3
 - text: Akces do projektu
   url: /formularz-zgloszenia-do-projektu/
-  order: 4
+  order: 3
 - text: Kontakt
   url: /kontakt/
-  order: 5
+  order: 4

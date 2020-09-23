@@ -13,4 +13,10 @@
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   
   <script src="{{ "/assets/js/modernizr.min.js" | relative_url }}"></script>
+
+  {% if site.google_analytics %}
+  <script type="text/javascript">
+  {% include google-analytics.js %}
+ </script>
+{% endif %}
 </head>

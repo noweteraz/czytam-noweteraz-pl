@@ -1,9 +1,8 @@
 title: Wiem, bo czytam
-title-school: Czytam, więc świadomie wybieram
 title-short: Wiem, bo czytam
 description: "Projekt zapobiegania przyczynom przestępczości."
 hero-slogan: Promujemy zalety czytania książek
-hero-description: OGÓLNOPOLSKA KAMPANIA „Wiem, bo czytam”
+hero-description: PROJEKT RESOCJALIZACYJNO-SPOŁECZNY
 
 url: https://czytam.noweteraz.pl
 
@@ -11,9 +10,7 @@ logo: "/assets/images/logos/czytam-wiec-wiem-logo-black.png"
 
 timezone: Europe/Warsaw
 
-google:
-  tag_manager:
-    container_id: 
+google_analytics: UA-133950974-3
      
 social:
   facebook: wykluczenipl
