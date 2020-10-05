@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#form-submit').click(function(e) {
 
     $("#contactForm").validate({
-      ignore: ':hidden:not(.captcha-control)',
+        ignore: ':hidden:not(.captcha-control)',
         rules: {
             'entry.122701191': {
                 required: true
