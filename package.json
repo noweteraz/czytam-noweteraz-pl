@@ -6,7 +6,7 @@
     "url": "git+https://github.com/noweteraz/galeria-noweteraz-pl.git"
   },
   "devDependencies": {
-    "grunt": "^1.2.0",
+    "grunt": "^1.5.3",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-uglify": "^4.0.1",
     "grunt-shell": "^2.1.0",
